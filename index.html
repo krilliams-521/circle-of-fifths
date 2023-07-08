@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chords in key</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Chords in key:</h1>
+        </div>
+
+        <form id="form">
+            <select name="key" id="key">
+                <option value="e">E</option>
+                <option value="a">A</option>
+                <option value="d">D</option>
+                <option value="g">G</option>
+                <option value="c">C</option>
+                <option value="f">F</option>
+            </select>
+
+            <select name="scale" id="scale">
+                <option value="major">Major</option>
+                <option value="minor">Minor</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="results">
+            <h1 id="header"></h1>
+            <h2>Major</h2>
+            <table>
+                <tr>
+                    <td>B</td>
+                    <td>E</td>
+                    <td>A</td>
+                </tr>
+            </table>
+            <h2>Minor</h2>
+            <table>
+                <tr>
+                    <td>G#m</td>
+                    <td>C#m</td>
+                    <td>F#m</td>
+                </tr>
+            </table>
+            <button onclick="clearResults()">Clear</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

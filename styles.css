@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: grid;
+}
+
+select {
+    margin-bottom: 1em;
+    width: 10em;
+}
+
+#results {
+    display: none;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
