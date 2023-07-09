@@ -7,16 +7,14 @@ let key, scale;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    if (keyElement.value && scaleElement.value) {
-        key = keyElement.value;
-        scale = scaleElement.value;
-        displayResults();
-    }
 });
 
 function displayResults() {
     clearResults();
+    if (keyElement.value && scaleElement.value) {
+        key = keyElement.value;
+        scale = scaleElement.value;
+    }
     let results = document.getElementById('results');
     let header = document.getElementById('header');
     const headerText = `Chords in key of ${key.toUpperCase()} ${scale}`;

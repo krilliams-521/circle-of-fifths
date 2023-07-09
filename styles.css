@@ -1,3 +1,7 @@
+* {
+    font-family: 'Courier New', monospace;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -10,8 +14,13 @@ form {
 }
 
 select {
+    height: 2em;
     margin-bottom: 1em;
     width: 10em;
+}
+
+button {
+    height: 2em;
 }
 
 #results {
