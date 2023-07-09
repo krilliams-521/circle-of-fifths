@@ -1,10 +1,8 @@
-let form = document.getElementById('form');
-
-let keyElement = document.getElementById('key');
-let scaleElement = document.getElementById('scale');
+const form = document.getElementById('form');
+const keyElement = document.getElementById('key');
+const scaleElement = document.getElementById('scale');
 
 let key, scale;
-
 let light = true;
 
 function changeTheme() {
@@ -36,8 +34,8 @@ function displayResults() {
         key = keyElement.value;
         scale = scaleElement.value;
     }
-    let results = document.getElementById('results');
-    let header = document.getElementById('header');
+    const results = document.getElementById('results');
+    const header = document.getElementById('header');
     const headerText = `Chords in key of ${key.toUpperCase()} ${scale}`;
     header.innerHTML = headerText;
     const selector = key + scale;
