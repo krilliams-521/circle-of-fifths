@@ -1,3 +1,18 @@
+:root {
+    --primary: black;
+    --background: white;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1,
+h2,
+td {
+    color: var(--primary);
+}
+
 * {
     font-family: 'Courier New', monospace;
 }
@@ -21,6 +36,7 @@ select {
 
 button {
     height: 2em;
+    margin-bottom: 1em;
 }
 
 #results {

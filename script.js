@@ -5,6 +5,27 @@ let scaleElement = document.getElementById('scale');
 
 let key, scale;
 
+let light = true;
+
+function changeTheme() {
+    light = !light;
+
+    let primary;
+    let background;
+
+    if (light) {
+        primary = 'black';
+        background = 'white';
+    } else {
+        primary = 'white';
+        background = 'black';
+    }
+
+    let root = document.documentElement;
+    root.style.setProperty('--primary', primary);
+    root.style.setProperty('--background', background);
+}
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 });
