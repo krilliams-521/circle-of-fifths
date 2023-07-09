@@ -52,6 +52,14 @@ function clearResults() {
 }
 
 const circleOfFifths = {
+    bmajor: {
+        majorChords: ['Gb', 'B', 'E'],
+        minorChords: ['Ebm', 'G#m', 'C#m']
+    },
+    bminor: {
+        majorChords: ['A', 'D', 'G'],
+        minorChords: ['F#m', 'Bm', 'Em']
+    },
     emajor: {
         majorChords: ['B', 'E', 'A'],
         minorChords: ['G#m', 'C#m', 'F#m']
@@ -59,5 +67,45 @@ const circleOfFifths = {
     eminor: {
         majorChords: ['D', 'G', 'C'],
         minorChords: ['Bm', 'Em', 'Am']
+    },
+    amajor: {
+        majorChords: ['E', 'A', 'D'],
+        minorChords: ['C#m', 'F#m', 'Bm']
+    },
+    aminor: {
+        majorChords: ['G', 'C', 'F'],
+        minorChords: ['Em', 'Am', 'Dm']
+    },
+    dmajor: {
+        majorChords: ['A', 'D', 'G'],
+        minorChords: ['F#m', 'Bm', 'Em']
+    },
+    dminor: {
+        majorChords: ['C', 'F', 'Bb'],
+        minorChords: ['Am', 'Dm', 'Gm']
+    },
+    gmajor: {
+        majorChords: ['D', 'G', 'C'],
+        minorChords: ['G#m', 'C#m', 'F#m']
+    },
+    gminor: {
+        majorChords: ['D', 'G', 'C'],
+        minorChords: ['Bm', 'Em', 'Am']
+    },
+    cmajor: {
+        majorChords: ['G', 'C', 'F'],
+        minorChords: ['Em', 'Am', 'Dm']
+    },
+    cminor: {
+        majorChords: ['Bb', 'Eb', 'Ab'],
+        minorChords: ['Gm', 'Cm', 'Fm']
+    },
+    fmajor: {
+        majorChords: ['C', 'F', 'Bb'],
+        minorChords: ['Am', 'Dm', 'Gm']
+    },
+    fminor: {
+        majorChords: ['Eb', 'Ab', 'Db'],
+        minorChords: ['Cm', 'Fm', 'Bbm']
     }
 }
