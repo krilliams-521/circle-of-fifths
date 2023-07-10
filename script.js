@@ -36,9 +36,12 @@ function displayResults() {
     }
     const results = document.getElementById('results');
     const header = document.getElementById('header');
-    const headerText = `Chords in key of ${key.toUpperCase()} ${scale}`;
+    const headerText = key.includes('-flat') ? `Chords in key of ${key[0].toUpperCase()} flat ${scale}:` : `Chords in key of ${key[0].toUpperCase()} ${scale}:`;
     header.innerHTML = headerText;
-    const selector = key + scale;
+    let selector = key + scale;
+    if (selector.includes('-')) {
+        selector = selector.replace('-', '');
+    }
     for (let chord of circleOfFifths[selector].majorChords) {
         const row = document.getElementById('major-chords');
         const cell = document.createElement('td');
@@ -124,5 +127,45 @@ const circleOfFifths = {
     fminor: {
         majorChords: ['Eb', 'Ab', 'Db'],
         minorChords: ['Cm', 'Fm', 'Bbm']
+    },
+    bflatmajor: {
+        majorChords: ['F', 'Bb', 'Eb'],
+        minorChords: ['Dm', 'Gm', 'Cm']
+    },
+    bflatminor: {
+        majorChords: ['Ab', 'Db', 'Gb'],
+        minorChords: ['Fm', 'Bbm', 'Ebm']
+    },
+    eflatmajor: {
+        majorChords: ['Bb', 'Eb', 'Ab'],
+        minorChords: ['Gm', 'Cm', 'Fm']
+    },
+    eflatminor: {
+        majorChords: ['Db', 'Gb', 'B'],
+        minorChords: ['Bbm', 'Ebm', 'G#m']
+    },
+    aflatmajor: {
+        majorChords: ['Eb', 'Ab', 'Db'],
+        minorChords: ['Cm', 'Fm', 'Bbm']
+    },
+    aflatminor: {
+        majorChords: ['Gb', 'B', 'E'],
+        minorChords: ['Ebm', 'G#m', 'C#m']
+    },
+    dflatmajor: {
+        majorChords: ['Ab', 'Db', 'Gb'],
+        minorChords: ['Fm', 'Bbm', 'Ebm']
+    },
+    dflatminor: {
+        majorChords: ['B', 'E', 'A'],
+        minorChords: ['G#m', 'C#m', 'F#m']
+    },
+    gflatmajor: {
+        majorChords: ['Db', 'Gb', 'B'],
+        minorChords: ['Bbm', 'Ebm', 'G#m']
+    },
+    gflatminor: {
+        majorChords: ['E', 'A', 'D'],
+        minorChords: ['C#m', 'F#m', 'Bm']
     }
 }
